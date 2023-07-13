@@ -1,4 +1,3 @@
-import "./App.css";
 import Navbar from "./component/navbar/Navbar";
 import Introsection from "./component/intro-Section/Introsection";
 import Curriculum from "./component/curriculum/Curriculum";
@@ -9,6 +8,7 @@ import Testimonials from "./component/testimonials/Testimonials";
 import AboutSection from "./component/about/About";
 import FaqSection from "./component/faq/Faq";
 import Footer from "./component/footer/footer";
+import "./App.css";
 
 function App() {
 	return (

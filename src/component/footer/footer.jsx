@@ -5,7 +5,9 @@ import { Button, BtnFlex } from "../styled Component/Button-styled";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { Link } from "react-scroll";
 
-const Conatiner = styled.div``;
+const Conatiner = styled.div`
+	margin: 0 2.5rem 0 2.5rem;
+`;
 
 const Main = styled.div`
 	display: flex;

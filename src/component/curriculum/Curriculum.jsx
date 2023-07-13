@@ -13,20 +13,15 @@ import { CurriculumStats } from "./Curriculum-stats";
 import CompanyLogo from "./Company-logo";
 import { useRef, useState } from "react";
 
+const Main = styled.div`
+	margin: 0 2.5rem 0 2.5rem;
+`;
+
 const H1 = styled(P)`
 	color: rgba(37, 56, 88, 0.9);
 	font-size: 2.5rem;
 	text-align: center;
 	font-weight: 600;
-`;
-
-const CompanyLogoWarpper = styled(Section)`
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-`;
-
-const GridItem = styled(Section)`
-	text-align: center;
 `;
 
 const FlexBoxCointainer = styled(FlexBetween)`
@@ -58,7 +53,6 @@ const ButtonCointer = styled.div`
 	}
 `;
 
-const Main = styled(Section)``;
 const H2 = styled.div`
 	font-family: "Epilogue", sans-serif;
 	font-weight: 600;

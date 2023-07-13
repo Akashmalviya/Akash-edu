@@ -119,7 +119,7 @@ const Li = styled.li`
 `;
 
 const Container = styled.div`
-	margin-top: 4rem;
+	margin: 4rem 2.5rem 0 2.5rem;
 `;
 
 const Para = styled.p`

@@ -6,6 +6,7 @@ import { Button } from "../styled Component/Button-styled";
 
 const NavCointainer = styled(FlexBetween)`
 	position: relative;
+	margin: 0 2.5rem 0 2.5rem;
 `;
 
 const Logo = styled.div`

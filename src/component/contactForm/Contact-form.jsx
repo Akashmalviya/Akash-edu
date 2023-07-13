@@ -8,10 +8,11 @@ import axios from "axios";
 const FormContainer = styled.div`
 	width: 100%;
 	z-index: 1;
-	padding: 20px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	background: white;
+	padding: 1.5rem;
+	box-sizing: border-box;
 `;
 
 const Label = styled.label`
@@ -31,7 +32,7 @@ const Icon = styled.div`
 	display: flex;
 	align-items: center;
 
-	margin-left: 5px;
+	margin-left: 10px;
 `;
 const Input = styled.input`
 	width: 100%;
@@ -68,13 +69,14 @@ const Select = styled.select`
 `;
 
 const TextArea = styled.textarea`
-	width: 100%;
 	padding: 10px;
+	width: 100%;
 	margin-top: 10px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	color: #0b1e51;
 	font-size: 0.9rem;
+	box-sizing: border-box;
 	resize: none;
 	background: rgba(183, 197, 213, 0.17);
 	&:focus {
@@ -153,7 +155,7 @@ function Form() {
 		setFromInfo({ ...form, [name]: e.target.value });
 	};
 
-	const submitHnadler = async (e) => {
+	const submitHandler = async (e) => {
 		if (success) return;
 		e.preventDefault();
 		const formData = new FormData(e.target);
@@ -182,7 +184,7 @@ function Form() {
 	};
 	return (
 		<FormContainer>
-			<form autoComplete="false" onSubmit={submitHnadler} name="form">
+			<form autoComplete="false" onSubmit={submitHandler} name="form">
 				<Label>Name:</Label>
 				<View>
 					<Icon>

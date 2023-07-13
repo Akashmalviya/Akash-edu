@@ -14,6 +14,7 @@ const IntroSectionCointainer = styled(FlexBetween)`
 		flex-direction: column;
 		padding-top: 5rem;
 	}
+	margin: 0 2.5rem 0 2.5rem;
 `;
 
 const IntrosectionWrapper = styled.div`

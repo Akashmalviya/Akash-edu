@@ -8,7 +8,8 @@ import BlueHighLight from "../styled Component/BlueHighLight";
 import SepratorLine from "../styled Component/Line";
 
 const Container = styled(FlexBetween)`
-	margin-top: 2em;
+	margin: 2rem 2.5rem 0 2.5rem;
+
 	@media (max-width: 786px) {
 		flex-direction: column;
 	}
@@ -21,7 +22,7 @@ const FaqSvgcointainer = styled.div`
 
 const QandA = styled.div`
 	padding: 4em;
-	height: 50em;
+	height: 40em;
 	flex: 1;
 `;
 

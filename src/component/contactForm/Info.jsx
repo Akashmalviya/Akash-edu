@@ -89,7 +89,7 @@ const CopyIcon = styled.div`
 `;
 
 const Info = () => {
-	const [copied, iscopied] = useState({
+	const [copied, setCopied] = useState({
 		copiedNumber: false,
 		copiedMail: false,
 	});
@@ -104,18 +104,18 @@ const Info = () => {
 	const copyHandler = async (value, type) => {
 		try {
 			await navigator.clipboard.writeText(value);
-			iscopied(
+			setCopied(
 				type === "number"
 					? { ...copied, copiedNumber: true }
 					: { ...copied, copiedMail: true }
 			);
 			setTimeout(() => {
-				iscopied(
+				setCopied(
 					type === "number"
 						? { ...copied, copiedNumber: false }
 						: { ...copied, copiedMail: false }
 				);
-			}, 1500);
+			}, 500);
 		} catch (error) {
 			console.log(error);
 		}
@@ -165,7 +165,7 @@ const Info = () => {
 				</InfoDivRight>
 
 				<CopyIcon
-					onClick={() => copyHandler("support@codematrix.com", "copiedMail")}
+					onClick={() => copyHandler("support@codematrix.com", "mail")}
 					copy={copied.copiedMail ? true : false}
 				>
 					{hover.hoverOnMail || device_width ? (

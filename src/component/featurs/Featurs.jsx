@@ -7,7 +7,7 @@ import { ReactComponent as TubeLogo } from "./../../Logos/svgs/floter.svg";
 import { ReactComponent as GroupLogo } from "./../../Logos/svgs/group.svg";
 
 const Main = styled.div`
-	margin-top: 5rem;
+	margin: 5rem 2.5rem 0 2.5rem;
 `;
 const Heading = styled.div`
 	font-family: "Epilogue", sans-serif;
