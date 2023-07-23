@@ -4,6 +4,7 @@ import { ReactComponent as DotsSvg } from "./../../Logos/svgs/dots-logo.svg";
 
 import { BtnFlex, Button } from "../styled Component/Button-styled";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Main = styled.div`
 	margin: 5rem 2.5rem 0 2.5rem;
@@ -51,14 +52,17 @@ const BoxNav = styled.div`
 `;
 const Body = styled.div`
 	display: flex;
-	align-items: self-start;
+	align-items: center;
 	background: #fff;
 	padding: 2rem;
+	padding-left: 1rem;
 	gap: 1.2rem;
 `;
 
-const Logo = styled.div`
-	padding-top: 2rem;
+const LogoContainer = styled.div``;
+const Logo = styled.img`
+	width: 7rem;
+	height: 8rem;
 `;
 
 const DescriptionHeader = styled.div`
@@ -102,11 +106,20 @@ const Coursers = ({ detail }) => {
 	return (
 		<Main>
 			<CourseOuterBox>
-				<ButtonExtended>
-					<BtnFlex>
-						Enroll Now <RightArrowIcon />
-					</BtnFlex>
-				</ButtonExtended>
+				<Link
+					to="contact_form"
+					spy={true}
+					smooth={true}
+					offset={-20}
+					duration={600}
+				>
+					<ButtonExtended>
+						<BtnFlex>
+							Enroll Now <RightArrowIcon />
+						</BtnFlex>
+					</ButtonExtended>
+				</Link>
+
 				<CourseBox>
 					<BoxNav>
 						<NavIcon>
@@ -114,9 +127,9 @@ const Coursers = ({ detail }) => {
 						</NavIcon>
 					</BoxNav>
 					<Body>
-						<Logo>
-							<detail.icon style={{ width: "7rem", height: "7rem" }} />
-						</Logo>
+						<LogoContainer>
+							<Logo src={detail.icon} />
+						</LogoContainer>
 						<div>
 							<DescriptionHeader>
 								<HeaderDash />

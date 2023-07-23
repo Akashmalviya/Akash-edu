@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 import { BsTelephone } from "react-icons/bs";
 import { ReactComponent as SuccessSubmit } from "./../../Logos/svgs/sucess-submit.svg";
+import CoursesDetail from "../../data/CouseDetail";
 import axios from "axios";
 
 const FormContainer = styled.div`
@@ -244,9 +245,9 @@ function Form() {
 				<Label>Tech Stack</Label>
 				<Select onChange={changeHandler} name="techStack">
 					<option value="">-- Select tech stack --</option>
-					<option value="MERN">MEAN</option>
-					<option value="MEAN">MEAN</option>
-					<option value="MERN">MERN</option>
+					{CoursesDetail.map((ele) => (
+						<option value={ele.title}>{ele.title}</option>
+					))}
 				</Select>
 
 				<Label>Description</Label>

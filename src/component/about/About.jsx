@@ -42,7 +42,7 @@ const Card = styled.div`
 	padding: 1.5rem 1rem;
 	@media (max-width: 768px) {
 		width: 52rem;
-		padding: 4rem;
+		padding: 3rem 2rem;
 		&:nth-child(1) {
 			margin-bottom: 3rem;
 		}

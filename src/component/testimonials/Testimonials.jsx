@@ -18,7 +18,6 @@ const Cointainer = styled.div``;
 const Header = styled.div`
 	margin-top: 3rem;
 	padding: 1rem;
-
 	position: relative;
 `;
 const HeaderbackGround = styled.div`
@@ -30,6 +29,8 @@ const HeaderbackGround = styled.div`
 	width: 100%;
 	color: rgba(11, 30, 81, 0.03);
 	top: 0;
+	left: 0;
+
 	user-select: none;
 	@media (max-width: 470px) {
 		font-size: 9rem;

@@ -22,9 +22,12 @@ const WarterMarkDiv = styled.div`
 	font-weight: 600;
 	top: calc(50% - 20rem);
 	z-index: 1;
-	overflow: hidden;
+	overflow-x: hidden;
 	left: 50%;
 	transform: translate(-50%, 0);
+	@media (max-width: 768px) {
+		font-size: 19rem;
+	}
 `;
 const Grid = styled.div`
 	padding-top: 5%;

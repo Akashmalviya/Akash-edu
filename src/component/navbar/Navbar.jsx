@@ -165,7 +165,7 @@ const Navbar = () => {
 					to="contact_form"
 					spy={true}
 					smooth={true}
-					offset={-40}
+					offset={-20}
 					duration={800}
 				>
 					<NavLink onClick={() => setactiveHamburger(false)}>Contact</NavLink>
@@ -185,7 +185,7 @@ const Navbar = () => {
 				spy={true}
 				smooth={true}
 				duration={500}
-				offset={-40}
+				offset={-20}
 			>
 				<NavButton>Let’s Talk</NavButton>
 			</Link>
