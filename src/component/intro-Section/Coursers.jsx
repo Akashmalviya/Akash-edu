@@ -8,6 +8,9 @@ import { BsArrowRightCircle } from "react-icons/bs";
 const Main = styled.div`
 	margin: 5rem 2.5rem 0 2.5rem;
 	max-width: 35vw;
+	@media (max-width: 768px) {
+		max-width: fit-content;
+	}
 `;
 
 const NavIcon = styled.div`

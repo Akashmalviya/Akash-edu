@@ -179,7 +179,7 @@ const AboutSection = () => {
 						<BsLinkedin
 							size={"3rem"}
 							cursor="pointer"
-							style={{ borderRadius: "5px" }}
+							style={{ borderRadius: "0.312rem" }}
 						/>
 					</FooterSocialMediaBox>
 					<FooterSocialMediaBox>

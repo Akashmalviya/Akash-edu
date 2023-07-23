@@ -4,14 +4,17 @@ import styled from "styled-components";
 import FlexBetween from "./../styled Component/Flexbetween";
 import { P } from "../styled Component/Introsection-styled";
 import SepratorLine from "../styled Component/Line";
-import { ReactComponent as BeginnerMedal } from "./../../Logos/svgs/bignners-logo.svg";
-import { ReactComponent as AdvanceMedal } from "./../../Logos/svgs/advance-logo.svg";
+import CompanyLogo from "./Company-logo";
 import FrameWorklogo from "./FrameWork-logo";
 import BlueHighLight from "../styled Component/BlueHighLight";
-import { AiOutlineRight } from "react-icons/ai";
-import { CurriculumStats } from "./Curriculum-stats";
-import CompanyLogo from "./Company-logo";
 import { useRef, useState } from "react";
+import { ReactComponent as CollageProject } from "./../../Logos/svgs/college-project.svg";
+
+// import { ReactComponent as BeginnerMedal } from "./../../Logos/svgs/bignners-logo.svg";
+// import { ReactComponent as AdvanceMedal } from "./../../Logos/svgs/advance-logo.svg";
+
+// import { AiOutlineRight } from "react-icons/ai";
+// import { CurriculumStats } from "./Curriculum-stats";
 
 const Main = styled.div`
 	margin: 0 2.5rem 0 2.5rem;
@@ -148,7 +151,18 @@ const Curriculum = () => {
 					</Para>
 				</FlexbetweenLeft>
 				<FlexbetweenRight>
-					<ButtonCointer
+					<CollageProject style={{ width: "38rem", height: "45rem" }} />
+				</FlexbetweenRight>
+			</FlexBoxCointainer>
+			<FrameWorklogo />
+		</Main>
+	);
+};
+
+export default Curriculum;
+
+{
+	/* <ButtonCointer
 						activatePadding={showBoxAdvance || showBoxBeginner ? false : true}
 					>
 						<Button
@@ -204,12 +218,5 @@ const Curriculum = () => {
 						<CurriculumStatsCointainer active={showBoxAdvance ? true : false}>
 							<CurriculumStats advance />
 						</CurriculumStatsCointainer>
-					</ButtonCointer>
-				</FlexbetweenRight>
-			</FlexBoxCointainer>
-			<FrameWorklogo />
-		</Main>
-	);
-};
-
-export default Curriculum;
+					</ButtonCointer> */
+}

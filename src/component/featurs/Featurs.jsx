@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import SepratorLine from "../styled Component/Line";
-import { ReactComponent as PriceLogo } from "./../../Logos/svgs/price.svg";
-import { ReactComponent as InfinityLogo } from "./../../Logos/svgs/infinity.svg";
-import { ReactComponent as TubeLogo } from "./../../Logos/svgs/floter.svg";
-import { ReactComponent as GroupLogo } from "./../../Logos/svgs/group.svg";
+import image from "./../../Logos/pngs/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign 1.png";
+import { RiLinkedinFill } from "react-icons/ri";
+import CourseTeacher from "../../data/CourseTeachers";
 
 const Main = styled.div`
 	margin: 5rem 2.5rem 0 2.5rem;
@@ -12,7 +11,7 @@ const Main = styled.div`
 const Heading = styled.div`
 	font-family: "Epilogue", sans-serif;
 	font-weight: 700;
-	font-size: 3.1rem;
+	font-size: 2.5rem;
 	color: #0b1e51;
 	@media (max-width: 768px) {
 		text-align: center;
@@ -21,91 +20,82 @@ const Heading = styled.div`
 
 const Body = styled.div`
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	@media (max-width: 768px) {
-		grid-template-columns: 1fr;
-	}
+	grid-template-columns: 1fr 1fr 1fr;
 `;
 const Cards = styled.div`
 	box-sizing: border-box;
 	background-color: white;
 	color: #253858;
-	line-height: 2.4rem;
-	width: 70%;
 	padding: 5%;
 	box-shadow: 0px 4px 16px 3px rgba(0, 0, 0, 0.04);
-	border-radius: 20px;
+	border-radius: 1.2rem;
 	margin: auto;
 	margin-bottom: 5vh;
+	width: 90%;
 `;
 
-const CardHeader = styled.div`
-	display: inline-flex;
+const CardImgContainer = styled.div`
+	position: relative;
+	height: fit-content;
+`;
+
+const CardImg = styled.img`
+	width: 100%;
+	height: 100%;
+`;
+
+const ImgText = styled.div`
+	color: #fff;
+	display: flex;
+	position: absolute;
+	bottom: 1rem;
+	font-size: 1.5rem;
+	padding-left: 1rem;
+	font-family: "Epilogue" sans-serif;
+	font-weight: 600;
+	gap: 1rem;
 	align-items: center;
 `;
 
-const PriceSvg = styled(PriceLogo)``;
-const InfinitySvg = styled(InfinityLogo)``;
-const GroupSvg = styled(GroupLogo)``;
-const TubeSvg = styled(TubeLogo)``;
-
-const CardHeading = styled.div`
-	font-family: "Epilogue", sans-serif;
-	font-weight: 700;
-	font-size: 1.5rem;
-	color: #0b1e51;
-	margin-left: 30px;
+const Icon = styled.div`
+	background-color: #0078d4;
+	border-radius: 5px;
+	padding-left: 0.1rem;
+	padding-right: 0.2rem;
+	display: flex;
+	align-items: center;
+	height: 2rem;
 `;
+
+const CardText = styled.p`
+	line-height: 1.6rem;
+	color: #253858;
+	word-wrap: break-word;
+`;
+
 const Featurs = () => {
 	return (
 		<Main>
-			<Heading>Course Features</Heading>
+			<Heading>Train by industry expert</Heading>
 			<SepratorLine />
 			<Body>
-				<Cards>
-					<CardHeader>
-						<PriceSvg />
-						<CardHeading>NO FEES !!100% FREE.</CardHeading>
-					</CardHeader>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat.
-					</p>
-				</Cards>
-				<Cards>
-					<CardHeader>
-						<InfinitySvg />
-						<CardHeading>Lifetime Access.</CardHeading>
-					</CardHeader>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat.
-					</p>
-				</Cards>
-				<Cards>
-					<CardHeader>
-						<TubeSvg />
-						<CardHeading>Hands on Guidance.</CardHeading>
-					</CardHeader>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat.
-					</p>
-				</Cards>
-				<Cards>
-					<CardHeader>
-						<GroupSvg />
-						<CardHeading>Mock Up Interviews.</CardHeading>
-					</CardHeader>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat.
-					</p>
-				</Cards>
+				{CourseTeacher.map((teacher) => (
+					<Cards>
+						<CardImgContainer>
+							<ImgText>
+								{teacher.name}
+								<Icon>
+									<RiLinkedinFill
+										fill="white"
+										style={{ height: "1.5rem", width: "1.7rem" }}
+									/>
+								</Icon>{" "}
+							</ImgText>
+							<CardImg src={teacher.photo} />
+						</CardImgContainer>
+						<CardText>{teacher.about}</CardText>
+					</Cards>
+				))}
 			</Body>
 		</Main>
 	);

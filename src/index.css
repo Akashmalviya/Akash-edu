@@ -16,6 +16,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box !important;
 	background: linear-gradient(122.55deg, #ffffff 1.84%, #dbe9f7 50.09%);
+	overflow-x: hidden;
 }
 
 code {
@@ -33,7 +34,7 @@ code {
 
 		@media (max-width: 580px) {
 			html {
-				font-size: 35%;
+				font-size: 40%;
 			}
 		}
 	}

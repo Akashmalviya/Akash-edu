@@ -8,15 +8,16 @@ import BlueHighLight from "../styled Component/BlueHighLight";
 import SepratorLine from "../styled Component/Line";
 
 const Container = styled(FlexBetween)`
-	margin: 2rem 2.5rem 0 2.5rem;
+	margin: 2rem 2.5rem 5rem 2.5rem;
 
 	@media (max-width: 786px) {
 		flex-direction: column;
+		margin: 2rem 2.5rem 0rem 2.5rem;
 	}
 `;
 
 const FaqSvgcointainer = styled.div`
-	padding: 2em;
+	padding: 2rem;
 	flex: 1;
 `;
 

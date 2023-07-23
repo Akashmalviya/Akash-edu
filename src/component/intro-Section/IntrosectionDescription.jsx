@@ -22,11 +22,19 @@ const GridContainerLeft = styled.div`
 	justify-content: start;
 	margin-bottom: 2rem;
 	@media (max-width: 768px) {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 `;
 const GridContainerRight = styled(GridContainerLeft)`
 	justify-content: end;
 	margin-top: 2rem;
+	@media (max-width: 768px) {
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
 `;
 
 const Container = styled.div`
