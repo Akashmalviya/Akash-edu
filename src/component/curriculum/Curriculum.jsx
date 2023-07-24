@@ -47,13 +47,6 @@ const FlexbetweenRight = styled(Section)`
 	height: 47em;
 	overflow: hidden;
 `;
-const ButtonCointer = styled.div`
-	transition: padding-top 300ms ease;
-	padding-top: ${(props) => (props.activatePadding ? "40%" : 0)};
-	@media (max-width: 768px) {
-		padding-top: 0;
-	}
-`;
 
 const H2 = styled.div`
 	font-family: "Epilogue", sans-serif;
