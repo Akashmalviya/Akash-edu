@@ -28,10 +28,8 @@ const ButtonExtended = styled(Button)`
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	margin-top: 0;
 	width: 9rem;
 	white-space: nowrap;
-	padding: 0.6rem 0.4rem;
 `;
 
 const RightArrowIcon = styled(BsArrowRightCircle)`
