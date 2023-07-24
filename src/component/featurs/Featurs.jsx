@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import SepratorLine from "../styled Component/Line";
-import image from "./../../Logos/pngs/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign 1.png";
 import { RiLinkedinFill } from "react-icons/ri";
 import CourseTeacher from "../../data/CourseTeachers";
 

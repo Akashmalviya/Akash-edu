@@ -2,7 +2,6 @@ import Navbar from "./component/navbar/Navbar";
 import Introsection from "./component/intro-Section/Introsection";
 import Curriculum from "./component/curriculum/Curriculum";
 import Featurs from "./component/featurs/Featurs";
-import Form from "./component/contactForm/Contact-form";
 import MaincontactForm from "./component/contactForm/Main-contact-form";
 import Testimonials from "./component/testimonials/Testimonials";
 import AboutSection from "./component/about/About";

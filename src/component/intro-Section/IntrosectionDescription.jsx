@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import FlexBetween from "../styled Component/Flexbetween";
-import { useState } from "react";
 import Coursers from "./Coursers";
 import CouseDetail from "./../../data/CouseDetail";
 

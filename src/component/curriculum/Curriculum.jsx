@@ -7,7 +7,6 @@ import SepratorLine from "../styled Component/Line";
 import CompanyLogo from "./Company-logo";
 import FrameWorklogo from "./FrameWork-logo";
 import BlueHighLight from "../styled Component/BlueHighLight";
-import { useRef, useState } from "react";
 import { ReactComponent as CollageProject } from "./../../Logos/svgs/college-project.svg";
 
 // import { ReactComponent as BeginnerMedal } from "./../../Logos/svgs/bignners-logo.svg";
@@ -79,46 +78,9 @@ const Para = styled.p`
 	@media (max-width: 768px) {
 		text-align: center;
 	}
-
-	//
 `;
 
-const Button = styled(FlexBetween)`
-	border-radius: 20px;
-	background-color: ${(props) =>
-		props.beginner ? "rgba(28, 190, 245, 0.2)" : " rgba(69, 48, 178, 0.2)"};
-	margin-bottom: 1rem;
-	margin-top: 1rem;
-	padding: 0.7rem;
-`;
-
-const CurriculumStatsCointainer = styled.div`
-	overflow: hidden;
-	transition: max-height 300ms ease;
-	max-height: ${(props) => (props.active ? "30rem" : 0)};
-`;
-const Div3 = styled(Section)`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-left: 1rem;
-	padding-right: 1rem;
-`;
-const Div4 = styled(Section)`
-	text-align: center;
-	font-weight: bold;
-	display: inline-block;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-	box-sizing: border-box;
-	margin-left: 1rem;
-	font-size: 1.1rem;
-`;
-const StatsDiv = styled.div``;
 const Curriculum = () => {
-	const [showBoxBeginner, setShowBoxBeginner] = useState(true);
-	const [showBoxAdvance, setShowBoxAdvane] = useState(false);
-
 	return (
 		<Main>
 			<SepratorLine></SepratorLine>
@@ -160,63 +122,3 @@ const Curriculum = () => {
 };
 
 export default Curriculum;
-
-{
-	/* <ButtonCointer
-						activatePadding={showBoxAdvance || showBoxBeginner ? false : true}
-					>
-						<Button
-							beginner
-							onClick={() => {
-								setShowBoxBeginner(!showBoxBeginner);
-								setShowBoxAdvane(false);
-								return;
-							}}
-						>
-							<Div3>
-								<BeginnerMedal />
-								<Div4>Beginner</Div4>
-							</Div3>
-							<Div3>
-								<AiOutlineRight
-									style={{
-										width: "1.31rem",
-										height: "1.31rem",
-										transition: "transform 300ms",
-										transform: showBoxBeginner ? "rotate(90deg)" : null,
-									}}
-								/>
-							</Div3>
-						</Button>
-
-						<CurriculumStatsCointainer active={showBoxBeginner ? true : false}>
-							<CurriculumStats beginner />
-						</CurriculumStatsCointainer>
-
-						<Button
-							advance
-							onClick={() => {
-								setShowBoxAdvane(!showBoxAdvance);
-								setShowBoxBeginner(false);
-							}}
-						>
-							<Div3>
-								<AdvanceMedal />
-								<Div4>Intermediate to Advance</Div4>
-							</Div3>
-							<Div3>
-								<AiOutlineRight
-									style={{
-										width: "1.31rem",
-										height: "1.31rem",
-										transition: "transform 300ms",
-										transform: showBoxAdvance ? "rotate(90deg)" : null,
-									}}
-								/>
-							</Div3>
-						</Button>
-						<CurriculumStatsCointainer active={showBoxAdvance ? true : false}>
-							<CurriculumStats advance />
-						</CurriculumStatsCointainer>
-					</ButtonCointer> */
-}

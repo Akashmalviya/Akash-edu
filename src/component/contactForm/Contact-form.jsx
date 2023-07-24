@@ -148,7 +148,7 @@ function Form() {
 	const [success, setSuccess] = useState(false);
 	const [isloading, setIsLoading] = useState(false);
 
-	const { name, email, phoneNumber, techStack, description } = form;
+	const { name, email, phoneNumber, description } = form;
 	const { nameFocus, emailFocus, phoneNumberFocus } = isFocus;
 
 	const changeHandler = (e) => {

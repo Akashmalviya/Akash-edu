@@ -4,7 +4,7 @@ import FlexBetween from "../styled Component/Flexbetween";
 import { ReactComponent as Mountain } from "../../Logos/svgs/mouintain.svg";
 import { ReactComponent as Target } from "../../Logos/svgs/target.svg";
 import { ReactComponent as Rocket } from "../../Logos/svgs/rocket.svg";
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 
 const Cointainer = styled.div`

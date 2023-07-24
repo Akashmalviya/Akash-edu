@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const useDeviceDetect = () => {
 	const [deviceWidth, setDeviceWidth] = useState(window.innerWidth);
