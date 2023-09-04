@@ -62,7 +62,7 @@ const Heading = styled.div`
 	}
 `;
 const Para = styled.p`
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-family: "Inter", sans-serif;
 	color: #253858;
 	font-weight: 500;
@@ -87,22 +87,22 @@ const Curriculum = () => {
 						<BlueHighLight />
 					</Heading>
 					<Para>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat erat. Ipsum in
-						semper eu.
+						Welcome to our prestigious education platform, where excellence in
+						education is our guiding principle. Our "World Class Curriculum" is
+						thoughtfully designed to unlock the full potential of learners,
+						providing them with a transformative educational experience. We
+						understand that the foundation of a successful learning journey lies
+						in a well-crafted curriculum that aligns with industry standards and
+						embraces the latest advancements in each field.
 					</Para>
 					<Para>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat erat. Ipsum in
-						semper eu.
-					</Para>
-					<Para>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-						faucibus auctor sagittis in cras tempus rhoncus. Dignissim
-						adipiscing enim, scelerisque nec nulla placerat erat. Ipsum in
-						semper eu.
+						Our curriculum is curated by a team of expert educators and
+						professionals who are passionate about empowering minds and
+						nurturing talents. It encompasses a diverse range of subjects,
+						including programming, web development, data science, artificial
+						intelligence, and more. We believe in holistic learning that fosters
+						creativity, critical thinking, and problem-solving skills, enabling
+						learners to adapt to the dynamic challenges of the modern world.
 					</Para>
 				</FlexbetweenLeft>
 				<FlexbetweenRight>

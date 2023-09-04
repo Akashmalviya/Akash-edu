@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { v4 as uuidv4 } from "uuid";
-import testimonialArry from "../../data/Testimonial";
+import testimonialArray from "../../data/Testimonial";
 import { Pagination, Navigation } from "swiper";
 import { ReactComponent as LeftFacedQutationMark } from "./../../Logos/svgs/leftFacedQuatation.svg";
 import { ReactComponent as RightFacedQutationMark } from "./../../Logos/svgs/rightFacedQuatation.svg";
@@ -161,15 +161,13 @@ const Testimonials = () => {
 					modules={[Pagination, Navigation]}
 					className="mySwiper"
 				>
-					{testimonialArry.map((testimonial, i) => {
+					{testimonialArray.map((testimonial, i) => {
 						return (
 							<div key={uuidv4()}>
 								<SwiperSlide>
 									<CarouselElment>
 										<ImgContainer>
-											<UserImg
-												src={require(`./../../Logos/pngs/${testimonial}`)}
-											/>
+											<UserImg src={testimonial.img} />
 										</ImgContainer>
 										<CarouselElmentBody>
 											<QuatationMarksRight>
@@ -178,19 +176,16 @@ const Testimonials = () => {
 												/>
 											</QuatationMarksRight>
 											<CarouselElmentText>
-												Enim non sit amet, feugiat ut amet, vitae. Ornare lorem
-												orci amet enim purus turpis sollicitudin convallis.
-												Lobortis enim massa vehicula habitant sed morbi. Feugiat
-												tempor euismod viverra magna semper varius porta
-												euismod. Et luctus in gravida sapien feugiat faucibus
-												magna massa et.
+												{testimonial.text}
 											</CarouselElmentText>
 											<CarouselElmentFotter>
 												<EmptyDiv></EmptyDiv>
 												<FooterBody>
-													<CarouselElmentName>Tony Stark</CarouselElmentName>
+													<CarouselElmentName>
+														{testimonial.name}
+													</CarouselElmentName>
 													<CarouselElmentDiscription>
-														Full Stack Developer
+														{testimonial.job}
 													</CarouselElmentDiscription>
 												</FooterBody>
 												<QuatationMarksLeft>

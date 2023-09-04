@@ -35,7 +35,7 @@ const Cards = styled.div`
 
 const CardImgContainer = styled.div`
 	position: relative;
-	height: fit-content;
+	height: 100%;
 `;
 
 const CardImg = styled.img`
