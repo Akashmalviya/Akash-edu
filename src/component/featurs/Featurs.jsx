@@ -43,6 +43,11 @@ const CardImg = styled.img`
 	height: 100%;
 `;
 
+const Link = styled.a`
+	text-decoration: none;
+	background-color: initial;
+`;
+
 const ImgText = styled.div`
 	color: #fff;
 	display: flex;
@@ -70,6 +75,7 @@ const CardText = styled.p`
 	line-height: 1.6rem;
 	color: #253858;
 	word-wrap: break-word;
+	max-height: 180px;
 `;
 
 const Featurs = () => {
@@ -83,12 +89,14 @@ const Featurs = () => {
 						<CardImgContainer>
 							<ImgText>
 								{teacher.name}
-								<Icon>
-									<RiLinkedinFill
-										fill="white"
-										style={{ height: "1.5rem", width: "1.7rem" }}
-									/>
-								</Icon>{" "}
+								<Link href={teacher.Linkedin}>
+									<Icon>
+										<RiLinkedinFill
+											fill="white"
+											style={{ height: "1.5rem", width: "1.7rem" }}
+										/>
+									</Icon>
+								</Link>{" "}
 							</ImgText>
 							<CardImg src={teacher.photo} />
 						</CardImgContainer>

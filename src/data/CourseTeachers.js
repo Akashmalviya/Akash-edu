@@ -9,7 +9,7 @@ const CourseTeacher = [
 		photo:
 			"https://res.cloudinary.com/dmbtc9axm/image/upload/v1693841897/Screenshot_2023-09-04_195901_yi75xo.jpg",
 		about:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit",
+			"Akash, a seasoned software developer with five years of invaluable experience, is a dynamic force in the world of Mean, Mern Stack, SwiftUI, and Flutter development. With a passion for crafting exceptional digital experiences and a relentless pursuit of innovation, Akash has established themselves as a proficient and forward-thinking engineer",
 	},
 	{
 		name: "Wasim Shaikh",
@@ -17,7 +17,7 @@ const CourseTeacher = [
 		photo:
 			"https://res.cloudinary.com/dmbtc9axm/image/upload/v1693841873/Screenshot_2023-09-04_194312_vlpdes.jpg",
 		about:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit",
+			"Wasim sir is an seasoned MEAN (MongoDB, Express.js, Angular, Node.js) developer with a wealth of experience spanning over a decade. With a passion for creating cutting-edge web applications, he has honed his skills to become a highly proficient and sought-after expert in the field.",
 	},
 	{
 		name: "Atul Tiwari",
@@ -25,7 +25,7 @@ const CourseTeacher = [
 		photo:
 			"https://res.cloudinary.com/dmbtc9axm/image/upload/v1693841873/Screenshot_2023-09-04_195956_b1rwcc.jpg",
 		about:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit",
+			"Atul is a dedicated Data Engineer with three years of professional experience in the field of data management and analytics. Throughout his career, he has consistently demonstrated a strong commitment to delivering data solutions that empower organizations to make data-driven decisions and gain valuable insights.",
 	},
 ];
 
