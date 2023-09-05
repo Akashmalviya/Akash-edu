@@ -1,7 +1,3 @@
-import Eric_Bec from "./../Logos/pngs/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign 1.png";
-import Mary_Markevich from "./../Logos/pngs/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair 1 (1).png";
-import Kevin_Blair from "./../Logos/pngs/young-bearded-man-with-striped-shirt 1.png";
-
 const CourseTeacher = [
 	{
 		name: "Akash Malviya",
