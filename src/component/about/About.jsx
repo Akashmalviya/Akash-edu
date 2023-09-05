@@ -18,8 +18,8 @@ const Header = styled.div`
 
 const Heading = styled.div`
 	font-weight: 700;
-	font-size: 1.7rem;
-	margin-bottom: 2rem;
+	font-size: 2rem;
+	margin-bottom: 3rem;
 `;
 
 const SubHeading = styled.div`
@@ -126,11 +126,12 @@ const AboutSection = () => {
 	return (
 		<Cointainer>
 			<Header>
-				<Heading>Lorem ipsum dolor sit amet, consectetur </Heading>
+				<Heading>Empowering Minds through Dynamic Live Learning </Heading>
 				<SubHeading>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-					faucibus auctor sagittis in cras tempus rhoncus. Dignissim adipiscing
-					enim, scelerisque nec nulla placerat erat. Ipsum in semper eu.
+					Ignite your potential with our live learning sessions that transcend
+					traditional boundaries. Our platform is a catalyst for growth, where
+					learners from all walks of life come together to share their passions
+					and expand their horizons.
 				</SubHeading>
 			</Header>
 			<Body>
@@ -140,9 +141,9 @@ const AboutSection = () => {
 							<Mountain style={{ width: "8rem", height: "8rem" }} />
 						</CardImg>
 						<CardText>
-							Enim non sit amet, feugiat ut amet, vitae. Ornare lorem orci amet
-							enim purus turpis sollicitudin convallis. Lobortis enim massa
-							vehicula habitant
+							Discover the joy of learning through live connections and
+							collaborative experiences. Our interactive sessions cater to
+							diverse interests and are designed to ignite your curiosity.
 						</CardText>
 					</Card>
 					<Card>
@@ -150,9 +151,9 @@ const AboutSection = () => {
 							<Target style={{ width: "8rem", height: "8rem" }} />
 						</CardImg>
 						<CardText>
-							Enim non sit amet, feugiat ut amet, vitae. Ornare lorem orci amet
-							enim purus turpis sollicitudin convallis. Lobortis enim massa
-							vehicula habitant
+							Discover the joy of learning through live connections and
+							collaborative experiences. Our interactive sessions cater to
+							diverse interests and are designed to ignite your curiosity.
 						</CardText>
 					</Card>
 				</FlexCointainer>
